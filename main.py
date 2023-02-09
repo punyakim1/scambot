@@ -55,7 +55,7 @@ async def init():
                 "MONGO_DB_URI var not defined. Please define it first"
             )
         served_users = len(await mongo.get_served_users())
-        served_chatss = len(await mongo.get_served_chats())
+        served_chats = len(await mongo.get_served_chats())
         text = f""" **Game Bot Stats:**
         
 **Python Version :** {pyver.split()[0]}
