@@ -56,3 +56,6 @@ if MONGO_DB_URI != None:
 else:
     async def add_served_user(user_id: int):
         return True
+
+    async def add_served_chat(chat_id: int):
+        return True
