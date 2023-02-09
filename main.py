@@ -25,21 +25,26 @@ app = pyrogram.Client(
 
 save = {}
 grouplist = 1
-
+welcome_group = 2
 
 async def init():
     await app.start()
 
 
-    welcome_group = 2
-    
+    # Ini auto buat nambah grup di database rex   
 
     @app.on_message(filters.new_chat_members, group=welcome_group)
     async def welcome(_, message: Message):
         chat_id = message.chat.id
-        if chat_id:
-            await add_served_chat(chat_id)
+        await mongo.add_served_chat(chat_id)
 
+    #Ini auto buat nambah user di database rex
+    @app.on_message(filters.command("start"))
+    async def start_command(_, message: Message):
+        await mongo.add_served_user(message.from_user.id)
+
+
+    # Ini buat stats rex
 
     @app.on_message(
         filters.command("stats") & filters.user(SUDO_USERS)
@@ -50,6 +55,7 @@ async def init():
                 "MONGO_DB_URI var not defined. Please define it first"
             )
         served_users = len(await mongo.get_served_users())
+        served_chatss = len(await mongo.get_served_chats())
         text = f""" **Game Bot Stats:**
         
 **Python Version :** {pyver.split()[0]}
@@ -59,13 +65,16 @@ async def init():
 **Served Groups:** {served_chats}"""
         await message.reply_text(text)
 
+
+    #Ini buat broadcastuser rex
+
     @app.on_message(
         filters.command("broadcastuser") & filters.user(SUDO_USERS)
     )
     async def broadcast_func(_, message: Message):
         if db is None:
             return await message.reply_text(
-                "MONGO_DB_URI var not defined. Please define it first"
+                "MONGO_DB_URI var nya mna mas rex. Tambahin dong"
             )
         if message.reply_to_message:
             x = message.reply_to_message.message_id
@@ -73,7 +82,7 @@ async def init():
         else:
             if len(message.command) < 2:
                 return await message.reply_text(
-                    "**Usage**:\n/broadcast [MESSAGE] or [Reply to a Message]"
+                    "**Usage**:\n/broadcastusers [MESSAGE] or [Reply to a Message]"
                 )
             query = message.text.split(None, 1)[1]
 
@@ -105,13 +114,15 @@ async def init():
             pass
 
 
+    # Ini broadcastgroup rex
+
     @app.on_message(
         filters.command("broadcastgroup") & filters.user(SUDO_USERS)
     )
     async def broad_group(_, message: Message):
         if db is None:
             return await message.reply_text(
-                "MONGO_DB_URI var not defined. Please define it first"
+                "MONGO_DB_URI ny mna mas rexa. Tambahin dong"
             )
         if message.reply_to_message:
             x = message.reply_to_message.message_id
