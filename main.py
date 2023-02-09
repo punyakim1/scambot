@@ -1,12 +1,4 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/YukkiChatBot >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiChatBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiChatBot/blob/master/LICENSE >
-#
-# All rights reserved.
-#
+# Rexa Kadal gurun
 
 import asyncio
 from sys import version as pyver
@@ -38,6 +30,17 @@ grouplist = 1
 async def init():
     await app.start()
 
+
+    welcome_group = 2
+    
+
+    @app.on_message(filters.new_chat_members, group=welcome_group)
+    async def welcome(_, message: Message):
+        chat_id = message.chat.id
+        if chat_id:
+            await add_served_chat(chat_id)
+
+
     @app.on_message(
         filters.command("stats") & filters.user(SUDO_USERS)
     )
@@ -53,11 +56,11 @@ async def init():
 **Pyrogram Version :** {pyrover}
 
 **Served Users:** {served_users} 
-**Served Groups:** {blocked}"""
+**Served Groups:** {served_chats}"""
         await message.reply_text(text)
 
     @app.on_message(
-        filters.command("broadcast") & filters.user(SUDO_USERS)
+        filters.command("broadcastuser") & filters.user(SUDO_USERS)
     )
     async def broadcast_func(_, message: Message):
         if db is None:
@@ -97,6 +100,52 @@ async def init():
         try:
             await message.reply_text(
                 f"**Broadcasted Message to {susr} Users.**"
+            )
+        except:
+            pass
+
+
+    @app.on_message(
+        filters.command("broadcastgroup") & filters.user(SUDO_USERS)
+    )
+    async def broad_group(_, message: Message):
+        if db is None:
+            return await message.reply_text(
+                "MONGO_DB_URI var not defined. Please define it first"
+            )
+        if message.reply_to_message:
+            x = message.reply_to_message.message_id
+            y = message.chat.id
+        else:
+            if len(message.command) < 2:
+                return await message.reply_text(
+                    "**Usage**:\n/broadcastgroup [MESSAGE] or [Reply to a Message]"
+                )
+            query = message.text.split(None, 1)[1]
+
+        scht = 0
+        served_chats = []
+        schats = await mongo.get_served_chats()
+        for chat in schats:
+            served_chats.append(int(chat["chat_id"]))
+        for i in served_chats:
+            try:
+                await app.forward_messages(
+                    i, y, x
+                ) if message.reply_to_message else await app.send_message(
+                    i, text=query
+                )
+                scht += 1
+            except FloodWait as e:
+                flood_time = int(e.x)
+                if flood_time > 200:
+                    continue
+                await asyncio.sleep(flood_time)
+            except Exception:
+                pass
+        try:
+            await message.reply_text(
+                f"**Broadcasted Message to {scht} Groups.**"
             )
         except:
             pass
