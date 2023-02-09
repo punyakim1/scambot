@@ -1,9 +1,8 @@
 {
-    "name": "Yukki Chat Bot",
-    "description": "A simple Chat-Bot written in Pyrogram using MongoDB",
-    "logo": "https://telegra.ph/file/78bc88b883b22024002cd.jpg",
+    "name": "Rexa Broadcasting nih boss",
+    "description": "Bikin barusan",
     "keywords": [
-      "yukki",
+      "rexa",
       "mongodb",
       "python",
       "pyrogram"
@@ -14,10 +13,10 @@
     "formation": {
       "worker": {
         "quantity": 1,
-        "size": "free"
+        "size": "eco"
       }
     },
-    "repository": "https://github.com/TeamYukki/YukkiChatBot",
+    "repository": "https://github.com/Rexa",
     "env": {
       "API_ID": {
         "description": "Get this value from my.telegram.org/apps.",
@@ -34,19 +33,9 @@
         "required": true,
         "value": ""
       },
-      "LOG_GROUP_ID": {
-        "description": "A group id to forward the incoming messages in it.",
-        "required": true,
-        "value": ""
-      },
       "MONGO_DB_URI": {
         "description": "Get a mongodb url from https://cloud.mongodb.com.",
         "required": false,
-        "value": ""
-      },
-      "PRIVATE_START_MESSAGE": {
-        "description": "A welcome message for your bot when someone starts it",
-        "required": true,
         "value": ""
       },
       "SUDO_USER": {
