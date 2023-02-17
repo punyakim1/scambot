@@ -61,8 +61,8 @@ async def init():
 **Python Version :** {pyver.split()[0]}
 **Pyrogram Version :** {pyrover}
 
-**Served Users:** {served_users} 
-**Served Groups:** {served_chats}"""
+👤 **Pengguna :** {served_users} 
+🏘️ **Group :** {served_chats}"""
         await message.reply_text(text)
 
 
