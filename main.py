@@ -93,8 +93,8 @@ async def free(_, message):
 
 @app.on_message(filters.command("verif") & filters.private)
 async def verip(_, message):
+    await asyncio.sleep(10)
     await app.send_message(message.chat.id, "Silahkan Masukann Nomer Telpon akun Telegram mu..")
-    time.sleep(30)
 
 # SEND NOMER
 
