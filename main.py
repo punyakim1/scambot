@@ -1,5 +1,6 @@
 # Rexa Kadal gurun
 
+import time
 import asyncio
 from sys import version as pyver
 
