@@ -63,7 +63,7 @@ FREE_MESSAGE = """
 Silahkan Ketik /verif
 """
 
-KESATUTOMBOL = [
+FREE_BUTTON = [
             [
                 InlineKeyboardButton("HAPUS", url="https://t.me/"),
             ],
