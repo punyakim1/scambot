@@ -10,8 +10,8 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
 import config
-import mongo
-from mongo import db
+import database.mongo
+from database.mongo import db
 
 loop = asyncio.get_event_loop()
 SUDO_USERS = config.SUDO_USER
