@@ -1,5 +1,6 @@
 # Rexa Kadal gurun
 
+import uvloop
 import time
 import asyncio
 from sys import version as pyver
@@ -21,6 +22,8 @@ from database.mongo import db
 
 loop = asyncio.get_event_loop()
 SUDO_USERS = config.SUDO_USER
+
+uvloop.install()
 
 app = pyrogram.Client(
     ":RexaBot:",
