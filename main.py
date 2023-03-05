@@ -42,7 +42,7 @@ Silahkan Ketik :
 START_BUTTON = [
 
     [  
-        InlineKeyboardButton("", url="https://t.me/JustRex"),              
+        InlineKeyboardButton("test", url="https://t.me/JustRex"),              
     ],            
 ]            
 @app.on_message(filters.command("start") & filters.private)
