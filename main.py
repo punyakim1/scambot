@@ -9,6 +9,11 @@ from pyrogram import filters, idle
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
+# IMPORT PYRO TYPES
+from pyrogram.types import Message
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery 
+
+
 import config
 import database.mongo
 from database.mongo import db
