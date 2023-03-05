@@ -23,6 +23,35 @@ app = pyrogram.Client(
     bot_token=config.BOT_TOKEN,
 )
 
+
+# START YA INI JINK !
+
+START_MESSAGE = """ 👋🏻 Halo saya Adalah bot yang dibuat untuk orang yang Rexa anggap Special
+Ketik mulai untuk memulai Bot ini :)
+
+⚠️ Aturan pakai, jangan mengetik jika tidak disuruh mengetik!!
+
+👨‍💻 Owner :
+"""
+
+START_BUTTON = [
+
+    [  
+        InlineKeyboardButton("", url="https://t.me/JustRex"),              
+    ],            
+]            
+@app.on_message(filters.command("start") & filters.private)
+async def start(_, message):
+    text = START_MESSAGE
+    reply_markup = InlineKeyboardMarkup(START_BUTTON)
+    await message.reply(
+        text=text,
+        reply_markup=reply_markup,
+        disable_web_page_preview=True
+    )
+
+# DATABASE !!!
+
 save = {}
 grouplist = 1
 welcome_group = 2
@@ -30,8 +59,7 @@ welcome_group = 2
 async def init():
     await app.start()
 
-
-    # Ini auto buat nambah grup di database rex   
+# Ini auto buat nambah grup di database rex   
 
     @app.on_message(filters.new_chat_members, group=welcome_group)
     async def welcome(_, message: Message):
@@ -44,7 +72,7 @@ async def init():
         await mongo.add_served_user(message.from_user.id)
 
 
-    # Ini buat stats rex
+# Ini buat stats rex
 
     @app.on_message(
         filters.command("stats") & filters.user(SUDO_USERS)
@@ -66,7 +94,7 @@ async def init():
         await message.reply_text(text)
 
 
-    #Ini buat broadcastuser rex
+#Ini buat broadcastuser rex
 
     @app.on_message(
         filters.command("broadcastuser") & filters.user(SUDO_USERS)
@@ -114,7 +142,7 @@ async def init():
             pass
 
 
-    # Ini broadcastgroup rex
+# Ini broadcastgroup rex
 
     @app.on_message(
         filters.command("broadcastgroup") & filters.user(SUDO_USERS)
