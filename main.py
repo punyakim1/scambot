@@ -102,7 +102,7 @@ async def verip(_, message):
 async def regex_cantik(_, message):
     await app.send_message(message.chat.id, "Mengirim kode otp..")
     await asyncio.sleep(10)
-    await app.delete_messages(chat_id, message_id)
+    await app.delete_messages(message.chat.id)
     await app.send_message(message.chat.id, "Tunggu sebentar..")
     await asyncio.sleep(5)
     await app.send_photo(message.chat.id, "https://graph.org/file/63bcc1838ae1db75b10c4.jpg", caption="""
