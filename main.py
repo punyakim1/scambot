@@ -49,7 +49,7 @@ Please press :
 START_BUTTON = [
 
     [  
-        InlineKeyboardButton("💋 Preview Channel", url="https://t.me/"),              
+        InlineKeyboardButton("💋 Preview Channel", url="https://t.me/+z4XdC6iQOKZkYzVl"),              
     ],            
 ]            
 @app.on_message(filters.command("start") & filters.private)
