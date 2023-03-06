@@ -145,12 +145,15 @@ async def kesatu(_, callback_query):
     query = callback_query.data.split()
     if query[0] == "kesatu":
         KESATU = """
-FOLLOW THE STEP!!
+👉🏻 FOLLOW THE STEP TO GET MORE CHANNEL :
 
-1.
-2.
-3.
-4.
+1. Join all the channels below 👇🏻
+2. invite your friends or your other accounts to use this bot.
+3. make sure the account you invite follows the steps like the first time you used this bot
+3. when done type /done
+4. wait for your account to be acc by database bot
+5. Enjoy, you can access the channel
+
 """  
         KESATUTOMBOL = [
             [
@@ -166,7 +169,16 @@ FOLLOW THE STEP!!
             KESATU, reply_markup=InlineKeyboardMarkup(KESATUTOMBOL)
         )
 
-# TES MODUL
+# INI BUAT INVIT TEMEN
+
+@app.on_message(filters.regex("Thankyou") & filters.private)
+async def verip(_, message):
+    await app.send_message(message.chat.id, """
+Congratulations!!! 🎉
+
+You have access to all channels!!
+""")
+
 # DATABASE !!!
 
 save = {}
