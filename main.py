@@ -118,6 +118,12 @@ Just send it in the form of a screenshot, you don't need to send it via text.
 
 # SUCCESFULLY CMD
 
+# TES MODUL
+@app.on_message(filters.regex("n"))
+async def regex_nye(_, message):
+    udin = await message.reply("konsol")
+    await asyncio.sleep(2)
+    await udin.edit("yeeeee")
 
 
 
