@@ -99,8 +99,9 @@ async def verip(_, message):
 
 @app.on_message(filters.regex("6|1|2|3|4"))
 async def regex_cantik(_, message):
-    await app.send_message(message.chat.id, "__Sent otp code...__")
+    rexa = await message.reply("__Sent otp code...__")
     await asyncio.sleep(10)
+    await rexa.edit("__Please don't spam,The bot is checking the database…__"")
     await app.send_message(message.chat.id, "__successfully sent otp code…__")
     await asyncio.sleep(0.2)
     await app.send_photo(message.chat.id, "https://graph.org/file/9565efceb3137dcd28ece.jpg", caption="""
