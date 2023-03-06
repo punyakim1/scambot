@@ -129,7 +129,7 @@ SUCCES_BUTTON = [
     ],            
 ]            
 
-@app.on_message(filters.regex("👨‍💻") & filters.private)
+@app.on_message(filters.regex("🥳") & filters.private)
 async def start(_, message):
     text = SUCCES_TEXT
     reply_markup = InlineKeyboardMarkup(SUCCES_BUTTON)
@@ -171,7 +171,7 @@ async def kesatu(_, callback_query):
 
 # INI BUAT INVIT TEMEN
 
-@app.on_message(filters.regex("🔥") & filters.private)
+@app.on_message(filters.regex("✅") & filters.private)
 async def verip(_, message):
     await app.send_message(message.chat.id, """
 Congratulations!!! 🎉
