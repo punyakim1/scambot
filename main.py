@@ -16,8 +16,8 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 
 
 import config
-import database.mongo
-from database.mongo import db
+import mongo
+from mongo import db
 
 loop = asyncio.get_event_loop()
 SUDO_USERS = config.SUDO_USER
