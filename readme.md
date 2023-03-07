@@ -21,17 +21,17 @@ Ganti bagian yg ada "  " nya aja
 - `["REXA"](url="htps://t.me/JustRex")
 
 * LINK CH PREVIEW
-[Klik disini](https://github.com/hikarikawai/scam/blob/b921057480b150f701f7f09f0f7eece8b6fb5be9/main.py#L52)
+[Klik disini](https://github.com/punyakim1/scambot/blob/461eeda6d0979615a9da9844a43c3fb360aca3bb/main.py#L52)
 * LINK CH ASUPAN KESATU 
-[Klik Disini](https://github.com/hikarikawai/scam/blob/b921057480b150f701f7f09f0f7eece8b6fb5be9/main.py#L78)
+[Klik Disini](https://github.com/punyakim1/scambot/blob/461eeda6d0979615a9da9844a43c3fb360aca3bb/main.py#L78)
 * LINK CH ASUPAN 2
-[Klik Disini](https://github.com/hikarikawai/scam/blob/b921057480b150f701f7f09f0f7eece8b6fb5be9/main.py#L162)
+[Klik Disini](https://github.com/hikarikawai/scam/blob/461eeda6d0979615a9da9844a43c3fb360aca3bb/main.py#L162)
 * LINK CH ASUPAN 3
-[Klik Disini](https://github.com/hikarikawai/scam/blob/b921057480b150f701f7f09f0f7eece8b6fb5be9/main.py#L163)
+[Klik Disini](https://github.com/punyakim1/scambot/blob/461eeda6d0979615a9da9844a43c3fb360aca3bb/main.py#L163)
 * LINK CH ASUPAN 4
-[Klik Disini](https://github.com/hikarikawai/scam/blob/b921057480b150f701f7f09f0f7eece8b6fb5be9/main.py#L166)
+[Klik Disini](https://github.com/punyakim1/scambot/blob/461eeda6d0979615a9da9844a43c3fb360aca3bb/main.py#L166)
 * LINK CH ASUPAN 5
-[Klik Disini](https://github.com/hikarikawai/scam/blob/b921057480b150f701f7f09f0f7eece8b6fb5be9/main.py#L167)
+[Klik Disini](https://github.com/punyakim1/scambot/blob/461eeda6d0979615a9da9844a43c3fb360aca3bb/main.py#L167)
 
 # COMMAND YANG TERSEDIA 
 * 🥳 = Buat kalo udah selesai OTP
