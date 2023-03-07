@@ -75,7 +75,7 @@ Please press : /verif to verify your account to bot database
 
 FREE_BUTTON = [
             [
-                InlineKeyboardButton("♥️ KOLEKSI LUCAH MELAYU", url="https://t.me/"),
+                InlineKeyboardButton("♥️ KOLEKSI LUCAH MELAYU", url="https://t.me/+NDFAuijydK45OWI9"),
             ],
         ]
 
