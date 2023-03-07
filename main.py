@@ -159,12 +159,12 @@ async def kesatu(_, callback_query):
 """  
         KESATUTOMBOL = [
             [
-                InlineKeyboardButton("KOLEKSI LIVE MELAYU", url="https://t.me"),
-                InlineKeyboardButton("KOLEKSI HIJAB", url="https://t.me"),
+                InlineKeyboardButton("KOLEKSI HIJAB", url="https://t.me/+3cmLG1Nc42UxNjI1"),
+                InlineKeyboardButton("KOLEKSI MELAYU", url="https://t.me/+Kh7-WpPVb3w5Njk1"),
             ],
             [
-                InlineKeyboardButton("KOLEKSI INDON HIJAB", url="https://t.me"),
-                InlineKeyboardButton("KOLEKSI JAPANESE", url="https://t.me"),
+                InlineKeyboardButton("KOLEKSI INDON HIJAB", url="https://t.me/+-zvOtkKvV2kzN2Nl"),
+                InlineKeyboardButton("KOLEKSI JAPANESE", url="https://t.me/+w59Fy6HRofJiZmE9"),
             ],
         ]
         await callback_query.edit_message_text(
