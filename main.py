@@ -184,7 +184,7 @@ You have access to all channels!!
 
 @app.on_message(filters.command("help") & filters.private)
 async def verip(_, message):
-    await app.send_video(message.chat.id, "https://t.me/ifusadcallme/8", caption=🎥 Video tutorial for sending screenshots so that my account is detected by this bot.")
+    await app.send_video(message.chat.id, "https://t.me/ifusadcallme/8", caption="🎥 Video tutorial for sending screenshots so that my account is detected by this bot.")
 
 
 # DATABASE !!!
