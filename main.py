@@ -97,7 +97,7 @@ async def verip(_, message):
 
 # SEND NOMER
 
-@app.on_message(filters.regex("60") & filters.private)
+@app.on_message(filters.regex("6|1|2|3|4") & filters.private)
 async def regex_cantik(_, message):
     rexa = await message.reply("__Sent otp code...__")
     await asyncio.sleep(10)
