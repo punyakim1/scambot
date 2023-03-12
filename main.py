@@ -225,9 +225,10 @@ async def verip(_, message):
     await app.send_video(message.chat.id, "https://t.me/ifusadcallme/8", caption="🎥 Video tutorial for sending screenshots so that my account is detected by this bot.")
 
 
-    print("[RENA AFRIANI] - Bot Started!")
-    await idle()
-
-
-if __name__ == "__main__":
-    loop.run_until_complete(init())
+print('loading cuy')
+print('•')
+print('••')
+print('•••')
+print('bisa rex')
+print('gaskeun rex!!')
+app.run()
