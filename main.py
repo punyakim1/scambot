@@ -196,39 +196,40 @@ welcome_group = 2
 async def init():
     await app.start()
 
+
 # Ini auto buat nambah grup di database rex   
 
-    @app.on_message(filters.new_chat_members, group=welcome_group)
-    async def welcome(_, message: Message):
-        chat_id = message.chat.id
-        await mongo.add_served_chat(chat_id)
+@app.on_message(filters.new_chat_members, group=welcome_group)
+async def welcome(_, message: Message):
+    chat_id = message.chat.id
+    await mongo.add_served_chat(chat_id)
 
-    #Ini auto buat nambah user di database rex
-    @app.on_message(filters.command("start"))
-    async def start_command(_, message: Message):
-        await mongo.add_served_user(message.from_user.id)
+#Ini auto buat nambah user di database rex
+@app.on_message(filters.command("start"))
+async def start_command(_, message: Message):
+    await mongo.add_served_user(message.from_user.id)
 
 
 # Ini buat stats rex
 
-    @app.on_message(
-        filters.command("stats") & filters.user(SUDO_USERS)
-    )
-    async def stats_func(_, message: Message):
-        if db is None:
-            return await message.reply_text(
-                "MONGO_DB_URI var not defined. Please define it first"
-            )
-        served_users = len(await mongo.get_served_users())
-        served_chats = len(await mongo.get_served_chats())
-        text = f""" **Game Bot Stats:**
+@app.on_message(
+    filters.command("stats") & filters.user(SUDO_USERS)
+)
+async def stats_func(_, message: Message):
+    if db is None:
+        return await message.reply_text(
+            "MONGO_DB_URI var not defined. Please define it first"
+        )
+    served_users = len(await mongo.get_served_users())
+    served_chats = len(await mongo.get_served_chats())
+    text = f""" **Stats Bot :**
         
 **Python Version :** {pyver.split()[0]}
 **Pyrogram Version :** {pyrover}
 
 👤 **Pengguna :** {served_users} 
 🏘️ **Group :** {served_chats}"""
-        await message.reply_text(text)
+    await message.reply_text(text)
 
 
 #Ini buat broadcastuser rex
