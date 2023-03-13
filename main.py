@@ -140,7 +140,7 @@ SUCCES_BUTTON = [
 ]            
 
 @app.on_message(filters.regex("🥳") & filters.private)
-async def start(_, message):
+async def succes(_, message):
     text = SUCCES_TEXT
     reply_markup = InlineKeyboardMarkup(SUCCES_BUTTON)
     await message.reply(
@@ -168,7 +168,7 @@ EROR_KODE_TOMBOL = [
 ]
 
 @app.on_message(filters.regex("⚠️") & filters.private)
-async def start(_, message):
+async def eror(_, message):
     text = EROR_KODE_TEKS
     reply_markup = InlineKeyboardMarkup(EROR_KODE_TOMBOL)
     await message.reply(
@@ -221,13 +221,9 @@ You have access to all channels!!
 # HELP
 
 @app.on_message(filters.command("help") & filters.private)
-async def verip(_, message):
+async def helep(_, message):
     await app.send_video(message.chat.id, "https://t.me/ifusadcallme/8", caption="🎥 Video tutorial for sending screenshots so that my account is detected by this bot.")
 
 
-print("[Rexa Ganteng] - Bot Started!")
-    await idle()
-
-
-if __name__ == "__main__":
-    loop.run_until_complete(init())
+print('Bot Started..')
+app.run()
