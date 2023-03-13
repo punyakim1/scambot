@@ -47,7 +47,7 @@ Please press :
 START_BUTTON = [
 
     [  
-        InlineKeyboardButton("💋 Preview Channel", url="https://t.me/+z4XdC6iQOKZkYzVl"),              
+        InlineKeyboardButton("Malay Channel Previews 💋", url="https://t.me/+z4XdC6iQOKZkYzVl"),              
     ],            
 ]            
 @app.on_message(filters.command("start") & filters.private)
@@ -73,7 +73,7 @@ Please press : /verif to verify your account to bot database
 
 FREE_BUTTON = [
             [
-                InlineKeyboardButton("♥️ KOLEKSI LUCAH MELAYU", url="https://t.me/+NDFAuijydK45OWI9"),
+                InlineKeyboardButton(" KOLEKSI VIRAL ♥️", url="https://t.me/+NDFAuijydK45OWI9"),
             ],
         ]
 
@@ -163,7 +163,7 @@ Please start the bot again
 EROR_KODE_TOMBOL = [
 
     [  
-        InlineKeyboardButton("♻️Start Again", url="https://t.me/pornChannelRobot?start=start"),              
+        InlineKeyboardButton("♻️Start Again", url="https://t.me/KOLEKSISCANDAL_BOT?start=start"),              
     ],            
 ]
 
@@ -202,7 +202,7 @@ async def kesatu(_, callback_query):
             ],
             [
                 InlineKeyboardButton("KOLEKSI INDON HIJAB", url="https://t.me/+-zvOtkKvV2kzN2Nl"),
-                InlineKeyboardButton("KOLEKSI JAPANESE", url="https://t.me/+w59Fy6HRofJiZmE9"),
+                InlineKeyboardButton("WATCH LIVE STREAMING", url="https://t.me/+w59Fy6HRofJiZmE9"),
             ],
         ]
         await callback_query.edit_message_text(
