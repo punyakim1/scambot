@@ -37,8 +37,8 @@ Please press :
 👉🏻 /getchannel to get your free Koleksi Porn channel
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
-⚠️ Leave this bot if you don't believe this bot
-━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚠️ Leave this bot when you don't believe Thanks.
+―――――――――――――――――――
 🔞 ADULT CONTENT ONLY, if you are not old enough please leave this Bot
 
 ⁉️ __Please don't spam this bot, if the bot process takes a long time, please wait, Dont Spam!!!__
