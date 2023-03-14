@@ -34,12 +34,12 @@ START_MESSAGE = """👋🏻 Hello, Introduce Me There Is a Bot For You To Get Vi
 
 Please press :
 
-👉🏻 /getchannel to get your free Koleksi Porn channel
+👉🏻 /JoinChannel to get your free Koleksi Porn channel
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━
-⚠️ Leave this bot when you don't believe Thanks.
 ―――――――――――――――――――
-🔞 ADULT CONTENT ONLY, if you are not old enough please leave this Bot
+[ ⚠️ ] Leave this bot when you don't believe Thanks.
+―――――――――――――――――――
+[ 🔞 ] This Channel Contains Pornographic Content, if you are not old enough please leave this Bot
 
 ⁉️ __Please don't spam this bot, if the bot process takes a long time, please wait, Dont Spam!!!__
 """
