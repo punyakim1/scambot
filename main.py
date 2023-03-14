@@ -32,7 +32,7 @@ app = pyrogram.Client(
 
 START_MESSAGE = """👋🏻 Hello, Introduce Me There Is a Bot For You To Get Viral Content Premium Porn Channels
 
-Please press :
+Please press : JoinChannels section ⬋
 
 👉🏻 /JoinChannel to get your free Koleksi Porn channel
 
