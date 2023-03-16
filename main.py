@@ -34,7 +34,7 @@ START_MESSAGE = """👋🏻 Hello, Introduce Me There Is a Bot For You To Get Vi
 
 Please press :
 
-👉🏻 /getchannel to get your free Koleksi Porn channel
+👉🏻 /JoinChannels to get your free Koleksi Porn channel
 
 ―――――――――――――――――――
 [ ⚠️ ] Leave this bot when you don't believe Thanks.
@@ -66,7 +66,7 @@ FREE_MESSAGE = """
 ⚠️ To access the Channel below, please Verify yourself first, 
 so that your account is registered in this bot database
 
-Please press : /verif to verify your account to bot database
+Please press : /verify to verify your account to bot database
 
 ❓if you dont understand please type /help
 """
