@@ -197,12 +197,12 @@ async def kesatu(_, callback_query):
 """  
         KESATUTOMBOL = [
             [
-                InlineKeyboardButton("KOLEKSI HIJAB", url="https://t.me/+3cmLG1Nc42UxNjI1"),
-                InlineKeyboardButton("KOLEKSI MELAYU", url="https://t.me/+Kh7-WpPVb3w5Njk1"),
+                InlineKeyboardButton("KOLEKSI HIJAB 💃", url="https://t.me/+3cmLG1Nc42UxNjI1"),
+                InlineKeyboardButton("KOLEKSI MELAYU💃", url="https://t.me/+Kh7-WpPVb3w5Njk1"),
             ],
             [
-                InlineKeyboardButton("KOLEKSI INDON HIJAB", url="https://t.me/+-zvOtkKvV2kzN2Nl"),
-                InlineKeyboardButton("WATCH LIVE STREAMING", url="https://t.me/+w59Fy6HRofJiZmE9"),
+                InlineKeyboardButton("Big Pussy💋", url="https://t.me/+NjYTRB4tj0AxMDhl"),
+                InlineKeyboardButton("WATCH LIVE STREAMING🎥", url="https://t.me/+w59Fy6HRofJiZmE9"),
             ],
         ]
         await callback_query.edit_message_text(
