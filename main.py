@@ -42,7 +42,8 @@ Please press : Click on the Link Below ⇙
 ―――――――――――――――――――
 [ 🔞 ] This Channel Contains Pornographic Content, if you are not old enough please leave this Bot
 
-⁉️ __Please don't spam bots. Everything is processed according to the queue. When you spam bots, you will be back in the original queue!__
+ 𝗖𝗮𝘂𝘁𝗶𝗼𝗻 𝗗𝗼𝗻'𝘁 𝗦𝗽𝗮𝗺 𝘁𝗵𝗶𝘀 𝗯𝗼𝘁 ‼️
+
 Thoughts from the Product Manager / CEO / Founder of Telegram. t.me/durov
 """
 
