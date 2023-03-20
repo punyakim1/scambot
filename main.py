@@ -50,7 +50,7 @@ Thoughts from the Product Manager / CEO / Founder of Telegram. t.me/durov
 START_BUTTON = [
 
     [  
-        InlineKeyboardButton("Malay Channel Previews 💋", url="https://t.me/+z4XdC6iQOKZkYzVl"),              
+        InlineKeyboardButton("Preview Channels 📷", url="https://t.me/+z4XdC6iQOKZkYzVl"),              
     ],            
 ]            
 @app.on_message(filters.command("start") & filters.private)
@@ -69,7 +69,7 @@ FREE_MESSAGE = """
 ⚠️ To access the Channel below please Verify yourself first,
 so that your account is registered in our Database System.
 
-Please press : /verify to verify your account to bot database
+Please press : /verify verify your account into our data system.
 
 ❔ If you Need help
 I have made a tutorial in the form of a video you just need to press /help
@@ -202,12 +202,12 @@ async def kesatu(_, callback_query):
 """  
         KESATUTOMBOL = [
             [
-                InlineKeyboardButton("KOLEKSI HIJAB 💃", url="https://t.me/+3cmLG1Nc42UxNjI1"),
-                InlineKeyboardButton("KOLEKSI MELAYU💃", url="https://t.me/+Kh7-WpPVb3w5Njk1"),
+                InlineKeyboardButton("HIJAB COLLECTION 💃", url="https://t.me/+3cmLG1Nc42UxNjI1"),
+                InlineKeyboardButton("Viral Channels💃", url="https://t.me/+Kh7-WpPVb3w5Njk1"),
             ],
             [
                 InlineKeyboardButton("Big Pussy💋", url="https://t.me/+NjYTRB4tj0AxMDhl"),
-                InlineKeyboardButton("WATCH LIVE STREAMING🎥", url="https://t.me/+w59Fy6HRofJiZmE9"),
+                InlineKeyboardButton("OnlyFans🎥", url="https://t.me/+w59Fy6HRofJiZmE9"),
             ],
         ]
         await callback_query.edit_message_text(
