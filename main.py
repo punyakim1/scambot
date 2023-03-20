@@ -202,11 +202,11 @@ async def kesatu(_, callback_query):
 """  
         KESATUTOMBOL = [
             [
-                InlineKeyboardButton("HIJAB COLLECTION 💃", url="https://t.me/+3cmLG1Nc42UxNjI1"),
-                InlineKeyboardButton("Viral Channels💃", url="https://t.me/+Kh7-WpPVb3w5Njk1"),
+                InlineKeyboardButton("HIJAB COLLECTION 🩸", url="https://t.me/+3cmLG1Nc42UxNjI1"),
+                InlineKeyboardButton("Viral Channels🩸", url="https://t.me/+Kh7-WpPVb3w5Njk1"),
             ],
             [
-                InlineKeyboardButton("Big Pussy💋", url="https://t.me/+NjYTRB4tj0AxMDhl"),
+                InlineKeyboardButton("Big Pussy❤️‍🔥", url="https://t.me/+NjYTRB4tj0AxMDhl"),
                 InlineKeyboardButton("OnlyFans🎥", url="https://t.me/+w59Fy6HRofJiZmE9"),
             ],
         ]
@@ -227,8 +227,7 @@ You have access to all channels!!
 
 @app.on_message(filters.command("help") & filters.private)
 async def helep(_, message):
-    await app.send_video(message.chat.id, "https://t.me/ifusadcallme/8", caption="🎥 Video tutorial for sending screenshots so that my account is detected by this bot.")
-
+    await app.send_video(message.chat.id, "https://t.me/Inihelpnya/3", caption="🎥 Video tutorial for sending screenshots so that the account can be verified by the system.")
 
 print('Bot Started..')
 app.run()
