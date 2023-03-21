@@ -77,7 +77,7 @@ I have made a tutorial in the form of a video you just need to press /help
 
 FREE_BUTTON = [
             [
-                InlineKeyboardButton(" Hottest Channels❤️‍🔥 ", url="https://t.me/+NDFAuijydK45OWI9"),
+                InlineKeyboardButton(" Hottest Channels❤️‍🔥 ", url="https://t.me/+JrZUVBEIjKI4ZTg1"),
             ],
         ]
 
