@@ -40,7 +40,7 @@ Please press : Click on the Link Below ⇙
 ―――――――――――――――――――
 [ ⚠️ ] Leave this bot when you don't believe Thanks.
 ―――――――――――――――――――
-[ 🔞 ] This Channel Contains Pornographic Content, if you are not old enough please leave this Bot
+﹝ 🔞 ﹞ This Channel Contains Pornographic Content, if you are not old enough please leave this Bot
 
  𝗖𝗮𝘂𝘁𝗶𝗼𝗻 𝗗𝗼𝗻'𝘁 𝗦𝗽𝗮𝗺 𝘁𝗵𝗶𝘀 𝗯𝗼𝘁 ‼️
 
