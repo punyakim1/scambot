@@ -66,7 +66,7 @@ async def start(_, message):
 # FREEPORN HANDLER 
 
 FREE_MESSAGE = """
-⚠️ To access the Channel below please Verify yourself first,
+⚠️ 𝗔𝗧𝗧𝗘𝗡𝗧𝗜𝗢𝗡 To access the Channel below please Verify yourself first,
 so that your account is registered in our Database System.
 
 Please press : /AccountVerification verify your account into our data system.
@@ -77,7 +77,7 @@ I have made a tutorial in the form of a video you just need to press /help
 
 FREE_BUTTON = [
             [
-                InlineKeyboardButton(" Hottest Channels❤️‍🔥 ", url="https://t.me/+JrZUVBEIjKI4ZTg1"),
+                InlineKeyboardButton(" 𝘗𝘙𝘌𝘔𝘐𝘜𝘔 𝘊𝘏𝘈𝘕𝘕𝘌𝘓𝘚 💋 ", url="https://t.me/+JrZUVBEIjKI4ZTg1"),
             ],
         ]
 
