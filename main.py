@@ -30,7 +30,7 @@ app = pyrogram.Client(
 
 # START YA INI JINK !
 
-START_MESSAGE = """🔴🏻 Hello Welcome To My Bot
+START_MESSAGE = """🕺 Hello Welcome To My Bot
 𝙋𝙡𝙚𝙖𝙨𝙚 𝙁𝙤𝙡𝙡𝙤𝙬 𝙔𝙤𝙪𝙧 𝙎𝙩𝙚𝙥𝙨 𝙏𝙤 𝙂𝙚𝙩 𝙏𝙝𝙚 𝘾𝙝𝙖𝙣𝙣𝙚𝙡 𝙔𝙤𝙪 𝙒𝙖𝙣𝙩.
 
 Please press : Click on the Link Below ⤦
