@@ -198,6 +198,7 @@ async def kesatu(_, callback_query):
 3. when done type /done
 4. wait for your account to be acc by database bot
 5. Enjoy, you can access the channel
+   𝘼𝙏𝙏𝙀𝙉𝙏𝙄𝙊𝙉 𝘐𝘧 𝘺𝘰𝘶 𝘩𝘢𝘷𝘦 𝘯𝘰𝘵 𝘫𝘰𝘪𝘯𝘦𝘥 𝘢𝘭𝘭 𝘵𝘩𝘦 𝘤𝘩𝘢𝘯𝘯𝘦𝘭𝘴 𝘣𝘦𝘭𝘰𝘸 𝘺𝘰𝘶 𝘤𝘢𝘯𝘯𝘰𝘵 𝘣𝘦 𝘢𝘤𝘤𝘦𝘱𝘵𝘦𝘥 𝘣𝘺 𝘢𝘭𝘭 𝘤𝘩𝘢𝘯𝘯𝘦𝘭𝘴 ! 
 
 """  
         KESATUTOMBOL = [
