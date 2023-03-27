@@ -210,9 +210,8 @@ async def kesatu(_, callback_query):
                 InlineKeyboardButton("𝘊𝘩𝘢𝘯𝘯𝘦𝘭 𝘍𝘰𝘶𝘳 🩸", url="https://t.me/+w59Fy6HRofJiZmE9"),
             ],
             [
-                InlineKeyboardButton("𝘊𝘩𝘢𝘯𝘯𝘦𝘭 𝘍𝘰𝘶𝘳 🩸", url="https://t.me/+w59Fy6HRofJiZmE9")
-                InlineKeyboardButton("𝘊𝘩𝘢𝘯𝘯𝘦𝘭 𝘍𝘰𝘶𝘳 🩸", url="https://t.me/+w59Fy6HRofJiZmE9")
-                
+                InlineKeyboardButton("𝘊𝘩𝘢𝘯𝘯𝘦𝘭 𝘍𝘰𝘶𝘳 🩸", url="https://t.me/+w59Fy6HRofJiZmE9"),
+                InlineKeyboardButton("𝘊𝘩𝘢𝘯𝘯𝘦𝘭 𝘍𝘰𝘶𝘳 🩸", url="https://t.me/+w59Fy6HRofJiZmE9"),
             ],    
         ]
         await callback_query.edit_message_text(
