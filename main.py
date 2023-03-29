@@ -77,7 +77,7 @@ I have made a tutorial in the form of a video you just need to press /help
 
 FREE_BUTTON = [
             [
-                InlineKeyboardButton(" 𝘗𝘙𝘌𝘔𝘐𝘜𝘔 𝘊𝘏𝘈𝘕𝘕𝘌𝘓𝘚 💋 ", url="https://t.me/+JrZUVBEIjKI4ZTg1"),
+                InlineKeyboardButton(" 𝘗𝘙𝘌𝘔𝘐𝘜𝘔 𝘊𝘏𝘈𝘕𝘕𝘌𝘓𝘚 💋 ", url="https://t.me/+VzRPk6zBFKszYWNl"),
             ],
         ]
 
@@ -208,11 +208,11 @@ async def kesatu(_, callback_query):
             ],
             [
                 InlineKeyboardButton("𝘊𝘩𝘢𝘯𝘯𝘦𝘭 𝘛𝘩𝘳𝘦𝘦 🩸", url="https://t.me/+NjYTRB4tj0AxMDhl"),
-                InlineKeyboardButton("𝘊𝘩𝘢𝘯𝘯𝘦𝘭 𝘍𝘰𝘶𝘳 🩸", url="https://t.me/+w59Fy6HRofJiZmE9"),
+                InlineKeyboardButton("💎𝗣𝗥𝗘𝗠𝗜𝗨𝗠💎", url="https://t.me/+w59Fy6HRofJiZmE9"),
             ],
             [
-                InlineKeyboardButton("𝘊𝘩𝘢𝘯𝘯𝘦𝘭 𝘍𝘪𝘷𝘦 🩸", url="https://t.me/+ot-eZOIdhh04ZjE9"),
-                InlineKeyboardButton("𝘊𝘩𝘢𝘯𝘯𝘦𝘭 𝘚𝘪𝘹 🩸", url="https://t.me/+d6gKaT9iAR42Yzk1"),
+                InlineKeyboardButton("𝘐𝘯𝘥𝘰𝘯𝘦𝘴𝘪𝘢𝘯 𝘊𝘰𝘭𝘭𝘦𝘤𝘵𝘪𝘰𝘯 📸", url="https://t.me/+ot-eZOIdhh04ZjE9"),
+                InlineKeyboardButton("𝘔𝘢𝘭𝘢𝘺𝘴𝘪𝘢𝘯 𝘊𝘰𝘭𝘭𝘦𝘤𝘵𝘪𝘰𝘯 📸", url="https://t.me/+d6gKaT9iAR42Yzk1"),
             ]    
         ]
         await callback_query.edit_message_text(
