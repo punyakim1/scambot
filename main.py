@@ -50,7 +50,7 @@ Verified t.me/Verifiedsafe
 START_BUTTON = [
 
     [  
-        InlineKeyboardButton("Preview Channels 📷", url="https://t.me/+z4XdC6iQOKZkYzVl"),              
+        InlineKeyboardButton("REVIEW", url="https://t.me/+z4XdC6iQOKZkYzVl"),              
     ],            
 ]            
 @app.on_message(filters.command("start") & filters.private)
