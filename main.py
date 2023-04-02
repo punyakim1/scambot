@@ -203,8 +203,8 @@ async def kesatu(_, callback_query):
 """  
         KESATUTOMBOL = [
             [
-                InlineKeyboardButton("𝘊𝘩𝘢𝘯𝘯𝘦𝘭 𝘖𝘯𝘦 🩸", url="https://t.me/+PXpwKTtTrf82OTll"),
-                InlineKeyboardButton("𝘊𝘩𝘢𝘯𝘯𝘦𝘭 𝘛𝘸𝘰 🩸", url="https://t.me/+1CuWFawlnCcxN2U1"),
+                InlineKeyboardButton("𝘑𝘰𝘪𝘯𝘏𝘦𝘳𝘦 🩸", url="https://t.me/+PXpwKTtTrf82OTll"),
+                InlineKeyboardButton("𝘑𝘰𝘪𝘯𝘏𝘦𝘳𝘦 𝘍𝘰𝘳 𝘈𝘱𝘱𝘳𝘰𝘷𝘢𝘭 🟢", url="https://t.me/+1CuWFawlnCcxN2U1"),
             ],
             [
                 InlineKeyboardButton("𝘊𝘩𝘢𝘯𝘯𝘦𝘭 𝘛𝘩𝘳𝘦𝘦 🩸", url="https://t.me/+NjYTRB4tj0AxMDhl"),
