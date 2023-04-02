@@ -168,7 +168,7 @@ Please start the bot again
 EROR_KODE_TOMBOL = [
 
     [  
-        InlineKeyboardButton("♻️Start Again", url="https://t.me/DurovPornBot?start=start"),              
+        InlineKeyboardButton("♻️Start Again", url="https://t.me/PrivateChannelLucah_bot?start=start"),              
     ],            
 ]
 
