@@ -39,6 +39,6 @@ Ganti bagian yg ada "  " nya aja
 
 # Copyright
 
-* Ini buatan [Rexa](https://t.me/JustRex) udah gitu aja
+* Ini buatan [REN](https://t.me/BannedDurov) udah gitu aja
 
 
